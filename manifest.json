@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "What2Whatch",
+    "description": "What2Whatch is a chrome extension that allows you to search for movies and tv shows and get information about them.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "w2w.html",
+      "default_icon": "hi_logo.png"
+    }
+  }

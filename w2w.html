@@ -1,0 +1,129 @@
+<html>
+    <body>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Geist', sans-serif;
+                color: oklch(94.71% 0.044 232.94);
+            }
+
+            .search {
+                border-radius: 12px;
+                width: 295px;
+                height: fit-content;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            .searchInput {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .search img {
+                width: 24px;
+                height: 24px;
+            }
+
+            .searchButton {
+                background: none;
+                border: none;
+                width: max-content;
+            }
+
+            .searchButton input {
+                background: none;
+                border: none;
+                font-size: 16px;
+                color: black;
+                display: block;
+            }
+
+            .movie-card {
+                margin: 10px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                background-color: oklch(15.33% 0.1 232.94);
+                border-radius: 12px;
+                align-items: center;
+                width: 295px;
+                height: 84px;
+                padding: 20px;
+            }
+
+            .movie-poster {
+                border-radius: 100%;
+                background-color: red;
+                width: 85px;
+                height: 85px;
+                border: grey 3px solid;
+            }
+
+            .movie-info {
+                width: fit-content;
+            }
+
+            .movie-info .name {
+                font-size: 16px;
+                font-weight: 400;
+                color: white;
+                letter-spacing: .1rem;
+            }
+
+            .movie-info .rating {
+                font-size: 14px;
+                font-weight: 200;
+                color: white;
+                letter-spacing: .1rem;
+            }
+
+            .movie-info h2 {
+                margin-bottom: 3px;
+            }
+
+            .services {
+                display: flex;
+                gap: 10px;
+            }
+
+            .services img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .movie-name-rating {
+                display: flex;
+                gap: 70px;
+            }
+
+
+        </style>
+        <header>
+            <div class="search">
+                <section class="searchInput">
+                    <button type="submit" class="searchButton">
+                        <img src="search.png" alt="search-icon">
+                    </button>
+                    <input type="text" placeholder="Search for a movie/show">
+                </section>
+            </div>
+        </header>
+        <section class="movie-card">
+            <img class="movie-poster" src="scarface.jpg" alt="movie image">
+            <div class="movie-info">
+                <h2 class="name">Scarface</h2>
+                <h2 class="rating">Rating 5.0</h2>
+                <div class="services">
+                    <a href=""><img src="./services_logos/icons8-netflix-desktop-app.svg" alt="netflix"></a>
+                    <a href=""><img src="./services_logos/icons8-disney-plus.svg" alt="disney-plus"></a>
+                    <a href=""><img src="./services_logos/icons8-hulu.svg" alt="hulu"></a>
+                    <a href=""><img src="./services_logos/icons8-hbo.svg" alt="hbo"></a>
+                </div>
+            </div>
+        </section>
+        <script src="popup.js"></script>
+    </body>
+</html>
